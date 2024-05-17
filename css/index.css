@@ -1,0 +1,138 @@
+html {
+    --s: 50px;
+    --c: #191b22;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36% at;
+    --_c: #0000 66%,#20222a 68% 70%,#0000 72%;
+    background: 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) 100% 25%,var(--_c)) 0 0/var(--_s), 
+      radial-gradient(var(--_g) 0 75%,var(--_c)) 0 0/var(--_s), 
+      repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+  }
+
+body {
+    /* background-color: #222; */
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+
+th, td {
+    border: 1px solid #7c15c5; /* фиолетовый */
+    text-align: center;
+    padding: 4px;
+    font-size: 14px;
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+th {
+    background-color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #444;
+}
+
+img {
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 50%;
+}
+
+.empty {
+    text-align: center;
+    font-style: italic;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.pagination a {
+    color: #fff;
+    background-color: #4b0082; /* фиолетовый */
+    padding: 6px 12px;
+    text-decoration: none;
+    border: 2px solid #4b0082; /* фиолетовый */
+    margin-right: 3px;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #9400d3; /* темно-фиолетовый */
+    border-color: #9400d3; /* темно-фиолетовый */
+}
+
+a.player-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b0082; /* фиолетовый */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #9400d3; /* темно-фиолетовый */
+}
+
+table {
+    margin-top: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Приветствие */
+#welcome-message {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#welcome-message .guest {
+    color: #FF6347; /* Красный цвет */
+}
+
+#welcome-message .user {
+    color: #32CD32; /* Зеленый цвет */
+}

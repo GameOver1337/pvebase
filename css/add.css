@@ -1,0 +1,136 @@
+html {
+    --s: 50px;
+    --c: #191b22;
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: 35.36% 35.36%;
+    --_c: #0000 66%,#20222a 68%,#0000 72%;
+    background: 
+      radial-gradient(var(--_g) at 100% 25%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) at 0 75%,var(--_c)) var(--s) var(--s)/var(--_s), 
+      radial-gradient(var(--_g) at 100% 25%,var(--_c)) 0 0/var(--_s), 
+      radial-gradient(var(--_g) at 0 75%,var(--_c)) 0 0/var(--_s), 
+      repeating-conic-gradient(var(--c) 0 25%,#0000 0 50%) 0 0/var(--_s), 
+      radial-gradient(var(--_c)) 0 calc(var(--s)/2)/var(--s) var(--s) var(--c);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.user-info {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.user-info span {
+    font-weight: bold;
+    color: #8100ff;
+}
+
+.logout-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+form {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form textarea,
+form select {
+    width: 97.5%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 6px;
+}
+
+form input[type="submit"] {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #7e12c3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+
+table th {
+    background-color: #222;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #333;
+}
+
+table tr:hover {
+    background-color: #444;
+}
+
+table td a {
+    color: #f76459;
+    text-decoration: none;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #6a0dad;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.pagination a:hover {
+    background-color: #7e12c3;
+}
+
+.pagination a.active {
+    background-color: #7e12c3;
+    pointer-events: none;
+}
+textarea {resize: none;height: 100px;}
