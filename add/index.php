@@ -313,7 +313,7 @@ function saveToDatabase($charName, $level, $faction, $race, $class, $guid, $desc
 function sendToDiscordWebhook($charName, $level, $faction, $race, $class, $realm, $description, $addedByUsername)
 {
     // Ваш URL вебхука Discord
-    $webhookUrl = "https://discord.com/api/webhooks/1237410841343819868/yU6CzX94-BaESBQNSBDH79qgRsiYQYMu1SwsFlIy4eXTzXzg2_FzoFHr2bJedQLUmpf7";
+    $webhookUrl = "";
 
     // Получаем название реалма по его идентификатору
     global $realms;
